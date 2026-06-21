@@ -13,7 +13,7 @@ export default function Navbar() {
           Liukiy<span className="text-[#B47F7B]">.o</span>
           <span className="absolute -bottom-1 left-1/2 h-px w-8 -translate-x-1/2 bg-[#C8A86B]/55" />
         </a>
-        <div className="hidden items-center gap-7 lg:flex">
+        <div className="hidden items-center gap-7 xl:flex">
           {links.map(([label, href]) => (
             <a key={label} href={href} className="text-xs font-medium text-[#76645D] transition-colors duration-300 hover:text-[#A46F6D]">
               {label}

@@ -12,26 +12,28 @@ function TinyFlower({ className }: { className: string }) {
 
 export default function Hero() {
   return (
-    <section id="home" className="paper-grain relative flex min-h-screen items-center overflow-hidden bg-[#FAF7F2] px-5 pb-20 pt-32 sm:px-8 lg:px-12">
+    <section id="home" className="paper-grain relative min-h-screen overflow-hidden bg-[#FAF7F2] px-5 sm:px-8 xl:px-12">
       <div className="watercolor-wash absolute -left-28 top-20 h-80 w-80 rounded-full bg-[#E8CFCB]/35 blur-3xl" />
       <div className="watercolor-wash absolute -right-28 bottom-10 h-96 w-96 rounded-full bg-[#B7C8B1]/25 blur-3xl" />
-      <div className="relative mx-auto grid w-full max-w-7xl items-center gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:gap-16">
-        <div className="max-w-2xl text-center lg:text-left">
+      <div className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center gap-12 py-28 text-center sm:py-32 xl:grid xl:grid-cols-[1fr_0.85fr] xl:gap-16 xl:text-left">
+        <div className="mx-auto flex w-full max-w-[900px] flex-col items-center xl:mx-0 xl:max-w-[760px] xl:items-start">
           <p className="font-['Caveat'] text-2xl text-[#A66F70] sm:text-3xl">made slowly, kept dearly</p>
-          <h1 className="mt-3 font-['Cormorant_Garamond'] text-[clamp(3.8rem,7.5vw,7.4rem)] font-semibold leading-[0.86] tracking-[-0.035em] text-[#604D45]">
-            Small treasures for <span className="italic text-[#A77573]">gentle souls.</span>
+          <h1 className="mt-3 max-w-[900px] font-['Cormorant_Garamond'] text-[clamp(3rem,8vw,7.5rem)] font-semibold leading-[0.88] tracking-[-0.04em] text-[#5E4A43] xl:max-w-[760px]">
+            Small treasures for <span className="italic text-[#B98282]">gentle souls.</span>
           </h1>
-          <div className="ribbon-divider mx-auto my-7 h-4 w-40 lg:mx-0" />
-          <p className="mx-auto max-w-xl text-[15px] leading-7 text-[#786861] sm:text-base sm:leading-8 lg:mx-0">
+          <div className="relative mx-auto my-8 h-px w-40 bg-[#E8D8D0] xl:mx-0">
+            <span className="absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rotate-45 border border-[#C8A86B]/55 bg-[#FAF7F2]" />
+          </div>
+          <p className="mx-auto max-w-2xl text-[15px] leading-7 text-[#786861] sm:text-base sm:leading-8 xl:mx-0">
             Feminine accessories shaped, stitched, and finished by hand—each one carrying the warmth of slow craft and the charm of something truly one of a kind.
           </p>
-          <div className="mt-8 flex flex-col justify-center gap-3 sm:flex-row lg:justify-start">
-            <a href="#collection" className="rounded-full border border-[#A87970]/25 bg-[#C99E96] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.14em] text-[#FFFDFC] shadow-[0_8px_18px_rgba(119,82,76,0.10)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#BD8F88]">See what we make</a>
-            <a href="#story" className="rounded-full border border-[#B7C8B1] bg-[#FDFBF8]/75 px-7 py-4 text-[11px] font-bold uppercase tracking-[0.14em] text-[#687263] transition duration-300 hover:-translate-y-0.5 hover:bg-white">Meet the maker</a>
+          <div className="mt-8 flex w-full flex-col items-center gap-4 sm:w-auto sm:flex-row xl:items-start">
+            <a href="#collection" className="w-full rounded-full border border-[#A87970]/25 bg-[#C99E96] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.14em] text-[#FFFDFC] shadow-[0_8px_18px_rgba(119,82,76,0.10)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#BD8F88] sm:w-auto">See what we make</a>
+            <a href="#story" className="w-full rounded-full border border-[#B7C8B1] bg-[#FDFBF8]/75 px-7 py-4 text-[11px] font-bold uppercase tracking-[0.14em] text-[#687263] transition duration-300 hover:-translate-y-0.5 hover:bg-white sm:w-auto">Meet the maker</a>
           </div>
         </div>
 
-        <div className="relative mx-auto aspect-[1/0.94] w-full max-w-[660px]">
+        <div className="relative mx-auto aspect-[1/0.94] w-full max-w-md xl:max-w-lg">
           <div className="absolute inset-[4%] rotate-2 rounded-[2rem_3rem_2.2rem_3.4rem] border border-[#C9A18E]/25 bg-[#FDFBF8]/85 shadow-[0_20px_55px_rgba(95,75,64,0.09)]" />
           <div className="fabric-folds absolute inset-[9%] -rotate-2 overflow-hidden rounded-[3rem_2rem_3.5rem_2.2rem] border border-white bg-[#E9D6D0]">
             <div className="lace-pattern absolute inset-x-0 top-0 h-[22%] opacity-60" />

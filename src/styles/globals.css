@@ -51,25 +51,6 @@
 
 .watercolor-wash { filter: blur(40px); opacity: .72; }
 
-.video-screen { position: relative; min-height: 100vh; background: #302825; }
-.brand-video { display: block; width: 100%; height: auto; }
-.skip-button {
-    position: fixed;
-    top: 24px;
-    right: 24px;
-    z-index: 30;
-    cursor: pointer;
-    border: 1px solid rgba(255,255,255,.55);
-    border-radius: 999px;
-    background: rgba(96,77,69,.28);
-    padding: 10px 18px;
-    color: white;
-    font: 700 10px/1 "Nunito Sans", sans-serif;
-    letter-spacing: .12em;
-    text-transform: uppercase;
-    backdrop-filter: blur(12px);
-}
-
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
