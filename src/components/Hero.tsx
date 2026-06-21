@@ -1,3 +1,5 @@
+import logo from "../assets/logo.png";
+
 function TinyFlower({ className }: { className: string }) {
   return (
     <div className={`absolute ${className}`} aria-hidden="true">
@@ -17,9 +19,10 @@ export default function Hero() {
       <div className="watercolor-wash absolute -right-28 bottom-10 h-96 w-96 rounded-full bg-[#B7C8B1]/25 blur-3xl" />
       <div className="relative mx-auto flex min-h-screen w-full max-w-7xl flex-col items-center justify-center gap-12 py-28 text-center sm:py-32 xl:grid xl:grid-cols-[1fr_0.85fr] xl:gap-16 xl:text-left">
         <div className="mx-auto flex w-full max-w-[900px] flex-col items-center xl:mx-0 xl:max-w-[760px] xl:items-start">
-          <p className="font-['Caveat'] text-2xl text-[#A66F70] sm:text-3xl">made slowly, kept dearly</p>
-          <h1 className="mt-3 max-w-[900px] font-['Cormorant_Garamond'] text-[clamp(3rem,8vw,7.5rem)] font-semibold leading-[0.88] tracking-[-0.04em] text-[#5E4A43] xl:max-w-[760px]">
-            Small treasures for <span className="italic text-[#B98282]">gentle souls.</span>
+          <img src={logo} alt="liukiy.o" className="h-auto w-[min(72vw,330px)] object-contain sm:w-[380px] xl:w-[410px]" />
+          <p className="mt-5 font-['Caveat'] text-xl text-[#A66F70] sm:text-2xl">made slowly, kept dearly</p>
+          <h1 className="mt-2 max-w-[900px] font-['Cormorant_Garamond'] text-[clamp(2.75rem,6vw,6rem)] font-semibold leading-[0.92] tracking-[-0.035em] text-[#5E4A43] xl:max-w-[760px]">
+            Luxury Women&apos;s <span className="italic text-[#B98282]">Accessories</span>
           </h1>
           <div className="relative mx-auto my-8 h-px w-40 bg-[#E8D8D0] xl:mx-0">
             <span className="absolute left-1/2 top-1/2 h-2 w-2 -translate-x-1/2 -translate-y-1/2 rotate-45 border border-[#C8A86B]/55 bg-[#FAF7F2]" />
@@ -28,7 +31,7 @@ export default function Hero() {
             Feminine accessories shaped, stitched, and finished by hand—each one carrying the warmth of slow craft and the charm of something truly one of a kind.
           </p>
           <div className="mt-8 flex w-full flex-col items-center gap-4 sm:w-auto sm:flex-row xl:items-start">
-            <a href="#collection" className="w-full rounded-full border border-[#A87970]/25 bg-[#C99E96] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.14em] text-[#FFFDFC] shadow-[0_8px_18px_rgba(119,82,76,0.10)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#BD8F88] sm:w-auto">See what we make</a>
+            <a href="#collection" className="w-full rounded-full border border-[#A87970]/25 bg-[#C99E96] px-7 py-4 text-[11px] font-bold uppercase tracking-[0.14em] text-[#FFFDFC] shadow-[0_8px_18px_rgba(119,82,76,0.10)] transition duration-300 hover:-translate-y-0.5 hover:bg-[#BD8F88] sm:w-auto">Explore Collection</a>
             <a href="#story" className="w-full rounded-full border border-[#B7C8B1] bg-[#FDFBF8]/75 px-7 py-4 text-[11px] font-bold uppercase tracking-[0.14em] text-[#687263] transition duration-300 hover:-translate-y-0.5 hover:bg-white sm:w-auto">Meet the maker</a>
           </div>
         </div>

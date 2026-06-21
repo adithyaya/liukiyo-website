@@ -1,11 +1,11 @@
 import { useEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
+import logo from "../assets/logo.png";
 
 const links = [
-  ["Home", "#home"],
-  ["Collections", "#collection"],
-  ["Our Story", "#story"],
-  ["Little Notes", "#journal"],
+  ["Collection", "#collection"],
+  ["About", "#story"],
+  ["Journal", "#journal"],
 ];
 
 export default function Navbar() {
@@ -56,9 +56,8 @@ export default function Navbar() {
   return (
     <header className="fixed inset-x-0 top-0 z-50 px-3 pt-3 sm:px-6 sm:pt-4">
       <nav className="site-navbar paper-grain mx-auto flex min-h-16 max-w-7xl items-center justify-between rounded-[1.25rem] border border-[#C9A18E]/30 bg-[#FDFBF8]/90 px-4 py-3 shadow-[0_7px_25px_rgba(94,75,65,0.07)] backdrop-blur-md sm:px-6">
-        <a href="#home" className="logo relative font-['Cormorant_Garamond'] text-[1.7rem] font-semibold leading-none tracking-[0.04em] text-[#665148] sm:text-3xl">
-          Liukiy<span className="text-[#B47F7B]">.o</span>
-          <span className="absolute -bottom-2 left-1/2 h-px w-8 -translate-x-1/2 bg-[#C8A86B]/55" />
+        <a href="#home" className="logo flex items-center" aria-label="liukiy.o home">
+          <img src={logo} alt="liukiy.o" className="brand-logo" />
         </a>
 
         <div className="hidden min-w-0 flex-1 items-center justify-center gap-3 px-4 md:flex lg:gap-7 lg:px-6">
