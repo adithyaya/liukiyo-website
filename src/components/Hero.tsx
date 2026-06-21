@@ -1,4 +1,3 @@
-import logo from "../assets/logo.png";
 import meadow from "../assets/storybook-meadow.webp";
 import { LaceDivider, LaceFrame } from "./lace/Lace";
 
@@ -8,8 +7,7 @@ export default function Hero() {
       <div className="sky-wash absolute inset-0" />
       <div className="relative mx-auto grid min-h-screen max-w-7xl items-center gap-12 pb-24 pt-32 text-center xl:grid-cols-[0.9fr_1.1fr] xl:text-left">
         <div className="mx-auto flex max-w-3xl flex-col items-center xl:mx-0 xl:items-start">
-          <img src={logo} alt="liukiy.o" className="h-auto w-[min(70vw,360px)] object-contain" />
-          <p className="mt-7 font-['Allura'] text-3xl text-[var(--cool-cerulean)]">nature, lacework & timeless beauty</p>
+          <p className="font-['Allura'] text-3xl text-[var(--cool-cerulean)]">nature, lacework & timeless beauty</p>
           <h1 className="mt-2 font-['Cormorant_Garamond'] text-[clamp(3.2rem,7vw,6.8rem)] font-semibold leading-[0.88] tracking-[-0.035em] text-[var(--ink)]">
             Luxury Women&apos;s <span className="italic text-[var(--cool-cerulean)]">Accessories</span>
           </h1>
