@@ -51,6 +51,27 @@
 
 .watercolor-wash { filter: blur(40px); opacity: .72; }
 
+.logo {
+    flex-shrink: 0;
+    min-width: max-content;
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .site-navbar {
+        min-height: 64px;
+        overflow: visible;
+        padding-left: 1rem;
+        padding-right: .625rem;
+    }
+
+    .logo {
+        overflow: visible;
+        font-weight: 600;
+        white-space: nowrap;
+    }
+}
+
 @media (prefers-reduced-motion: reduce) {
     html { scroll-behavior: auto; }
     *, *::before, *::after { scroll-behavior: auto !important; transition-duration: .01ms !important; }
