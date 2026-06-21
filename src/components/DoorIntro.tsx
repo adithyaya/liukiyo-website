@@ -2,6 +2,7 @@ import { useLayoutEffect, useRef, useState } from "react";
 import { gsap } from "gsap";
 import storybookMeadow from "../assets/storybook-meadow.webp";
 import whiteDoor from "../assets/white-door.webp";
+import logo from "../assets/logo.png";
 
 type DoorIntroProps = {
   onComplete?: () => void;
@@ -89,6 +90,12 @@ export default function DoorIntro({ onComplete }: DoorIntroProps) {
           />
         ))}
       </div>
+
+      <img
+        src={logo}
+        alt="liukiy.o"
+        className="absolute left-1/2 top-[5vh] z-20 h-12 w-auto max-w-[58vw] -translate-x-1/2 object-contain sm:h-16 lg:h-[4.5rem]"
+      />
 
       <div className="relative z-10 flex min-h-screen flex-col items-center justify-end px-5 pb-[5vh] pt-10 sm:pb-[4vh]">
         <button
