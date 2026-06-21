@@ -107,7 +107,7 @@ export default function DoorIntro({ onComplete }: DoorIntroProps) {
             className="h-full w-full origin-left object-contain drop-shadow-[0_12px_16px_rgba(75,62,51,0.15)] [transform-style:preserve-3d] will-change-transform group-hover:drop-shadow-[0_14px_22px_rgba(75,62,51,0.19)]"
           />
         </button>
-        <p className="entrance-caption mt-2 font-['Caveat'] text-xl text-[#7E655C] drop-shadow-[0_1px_0_rgba(255,255,255,0.7)] sm:text-2xl">
+        <p className="entrance-caption mt-2 font-['Allura'] text-2xl text-[var(--bronzetone)] drop-shadow-[0_1px_0_rgba(255,255,255,0.7)] sm:text-3xl">
           open the little atelier
         </p>
       </div>

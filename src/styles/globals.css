@@ -1,23 +1,45 @@
-@import url("https://fonts.googleapis.com/css2?family=Caveat:wght@500;600&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=Nunito+Sans:wght@400;500;600;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Allura&family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500;1,600&family=EB+Garamond:ital,wght@0,400;0,500;1,400&family=Nunito+Sans:wght@500;600&display=swap");
 
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
 @layer base {
+    :root {
+        --sky-whisper: #F7FBFE;
+        --angel-mist: #F0F7FD;
+        --baby-blue-cloud: #E6F1FA;
+        --soft-sky-wash: #C9DEEF;
+        --powder-blue-haze: #AFCBE3;
+        --cool-cerulean: #8EB1D1;
+        --baby-blue-eyes: #A7C7E7;
+        --gold-fusion: #79864B;
+        --misty-moss: #BDB77C;
+        --spanish-bistre: #78793F;
+        --dark-tan: #8A7D4C;
+        --pullman-green: #27301B;
+        --bronzetone: #41521E;
+        --icky-green: #909632;
+        --green-smoke: #99A558;
+        --orinoco: #D8DDA8;
+        --ivory: #FDFBF7;
+        --ink: #30362A;
+        --shadow-whisper: 0 10px 35px rgba(75, 92, 105, .06);
+        --shadow-card: 0 22px 60px rgba(71, 91, 108, .09);
+    }
     *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; background: #FAF7F2; }
+    html { scroll-behavior: smooth; background: var(--sky-whisper); }
     body {
         margin: 0;
         min-width: 320px;
-        background: #FAF7F2;
-        color: #604D45;
-        font-family: "Nunito Sans", sans-serif;
+        background: var(--sky-whisper);
+        color: var(--ink);
+        font-family: "EB Garamond", serif;
         -webkit-font-smoothing: antialiased;
         -moz-osx-font-smoothing: grayscale;
         text-rendering: optimizeLegibility;
     }
-    ::selection { background: #E8CFCB; color: #604D45; }
+    ::selection { background: var(--soft-sky-wash); color: var(--pullman-green); }
     button, a { -webkit-tap-highlight-color: transparent; }
 }
 
@@ -27,6 +49,40 @@
         radial-gradient(circle at 70% 65%, rgba(116, 88, 74, 0.02) 0 0.8px, transparent 1px);
     background-size: 9px 9px, 13px 13px;
 }
+
+.botanical-paper {
+    background-image:
+        radial-gradient(circle at 18% 30%, rgba(82, 107, 126, .035) 0 .65px, transparent .85px),
+        radial-gradient(circle at 70% 65%, rgba(121, 134, 75, .028) 0 .7px, transparent 1px);
+    background-size: 9px 9px, 13px 13px;
+}
+
+.sky-wash {
+    background:
+        radial-gradient(circle at 72% 22%, rgba(255,255,255,.88), transparent 25%),
+        radial-gradient(circle at 12% 50%, rgba(175,203,227,.3), transparent 34%),
+        linear-gradient(180deg, var(--sky-whisper), var(--baby-blue-cloud) 62%, rgba(216,221,168,.28));
+}
+
+.botanical-stitch {
+    position: relative;
+    border: 1px solid rgba(121, 134, 75, .48);
+    border-radius: 55% 45% 55% 45%;
+    transform: rotate(45deg);
+}
+
+.botanical-stitch::before,
+.botanical-stitch::after {
+    content: "";
+    position: absolute;
+    width: 42%;
+    height: 68%;
+    border: 1px solid rgba(121, 134, 75, .42);
+    border-radius: 80% 15% 80% 20%;
+}
+
+.botanical-stitch::before { left: -24%; top: 12%; transform: rotate(-32deg); }
+.botanical-stitch::after { right: -24%; bottom: 12%; transform: rotate(148deg); }
 
 .fabric-folds {
     background-image:
